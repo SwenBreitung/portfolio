@@ -1,0 +1,62 @@
+@import './../../../styles.scss';
+section {
+    padding-top: 150px;
+    position: relative;
+    gap: 15%;
+    img {
+        height: 42px;
+        width: 42px;
+        // padding: 20px 30px;
+    }
+    @include center-flex;
+}
+
+.container-img {
+    @include center-flex;
+    @include column();
+    padding: 22px 22px 22px 0;
+}
+
+.dubble-text {
+    @include center-flex;
+    @include column();
+}
+
+.header {
+    font-size: 70px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.background-img {
+    background-image: url(./../../../assets/brackground-img/green-shadow-mySkills.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 112px;
+    left: 0px;
+    right: 24px;
+    bottom: 278px;
+    height: 438px;
+    width: 141.59px;
+}
+
+.flex-center {
+    @include center-flex;
+    h1 {
+        white-space: nowrap;
+        padding-right: 20px;
+        margin: 0;
+    }
+}
+
+.right-container {
+    gap: 42px;
+    @include column();
+    @include center-flex;
+}

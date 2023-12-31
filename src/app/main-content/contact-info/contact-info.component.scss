@@ -1,0 +1,54 @@
+@import './../../../styles.scss';
+section {
+    // background-image: url();
+    background-repeat: no-repeat;
+    z-index: 50;
+    justify-content: space-between;
+    display: flex;
+}
+
+.contact-info {
+    width: 60%;
+    gap: 49px;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: relative;
+    font-size: 20px;
+    /* Anpassen nach Bedarf */
+    color: #333;
+    /* Textfarbe */
+    height: 100px;
+    /* Anpassen nach Bedarf */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    font-size: 20px;
+    /* Anpassen nach Bedarf */
+    color: #333;
+    /* Textfarbe */
+    text-align: center;
+}
+
+.arrow {
+    font-size: 25px;
+    /* Größe des Pfeilsymbols anpassen */
+    color: #333;
+    /* Farbe des Pfeilsymbols */
+    padding-top: 10px;
+    /* Abstand zwischen Text und Pfeil */
+}

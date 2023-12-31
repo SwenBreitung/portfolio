@@ -1,0 +1,53 @@
+@import './../../../styles.scss';
+section {
+    @include center-flex();
+}
+
+#portfolio {
+    padding-top: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header {
+    width: 70%;
+    @include center-flex();
+    h1 {
+        padding: 0 20px;
+        margin: 0;
+    }
+}
+
+.little-line {
+    width: 50px !important;
+}
+
+.bg-img-join {}
+
+.bg-img-poloco {}
+
+.bg-img-dummy {}
+
+.img {
+    display: flex;
+    width: 500px;
+    height: 351px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skill-overlay {
+    @include column();
+}
+
+.skill-container {
+    @include center-flex();
+    width: 100%;
+}

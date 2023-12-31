@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --main-text-color: #ffffff;
+    --main-background-color: rgb(20, 28, 46);
+    --second-main-color: rgba(151, 71, 255, 1);
+    --hover-color: rgb(112, 230, 28);
+    --color-text: rgb(80, 156, 36);
+}
+
+body {
+    margin: 0;
+    width: calc(100vw - 15px);
+    height: 100vh;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    box-sizing: border-box;
+}
+
+.horizontal-line {
+    height: 2px;
+    background-color: var( --hover-color);
+    width: 48px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap {
+    gap: 15px;
+}
+
+.gap80px {
+    gap: 80px;
+}
+
+.z-index10 {
+    position: relative;
+    z-index: 10;
+}
+
+.text-padding-right {
+    padding-right: 48px;
+}
+
+.text-padding-left {
+    padding-left: 48px;
+}
+
+// @mixin text-padding-left {
+//     padding-left: 48px;
+// }
+@mixin center-flex($justify-content: center, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin column($column:column) {
+    display: flex;
+    flex-direction: $column;
+}
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 10px, $color: rgba(0, 0, 0, 0.1)) {
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin border-radius($radius: 4px) {
+    border-radius: $radius;
+}
+
+@mixin border($width: 1px, $style: solid, $color: black) {
+    border: $width $style $color;
+}
+
+@mixin padding($top: 8px, $right: 8px, $bottom: 8px, $left: 8px) {
+    padding: $top $right $bottom $left;
+}
+
+@mixin margin($top: 8px, $right: 8px, $bottom: 8px, $left: 8px) {
+    margin: $top $right $bottom $left;
+}
+
+@mixin color() {
+    color: var( --main-text-color);
+}

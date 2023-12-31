@@ -1,0 +1,95 @@
+@import './../../../styles.scss';
+section {
+    @include center-flex($align-items: baseline);
+    @include column();
+}
+
+.right-side {
+    @include center-flex();
+    @include column();
+    a,
+    span {
+        white-space: nowrap;
+    }
+    input,
+    textarea {
+        border: var(--second-main-color) solid 2px;
+        border-radius: 10px;
+        background-color: var(--main-background-color);
+        margin: 5px;
+        width: 100%;
+    }
+    textarea {
+        height: 200px;
+    }
+    button {
+        width: 193px;
+        height: 28px;
+        border-radius: 10px;
+        border: 0px;
+        margin: 24px;
+    }
+    #agreeCheckbox {
+        border: var(--color-text)
+    }
+}
+
+.data-agreement-section {
+    @include center-flex();
+}
+
+
+/* Verstecke die Standard-Checkbox */
+
+.custom-checkbox input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+    top: -13px;
+    left: -5px;
+}
+
+.custom-checkbox .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    /* Höhe der Box */
+    background-color: var(--main-background-color);
+    /* Hintergrundfarbe der Box */
+    border: 2px solid var(--color-text);
+    border-radius: 5px;
+    /* Randfarbe und -dicke */
+    position: relative;
+    margin: 5px;
+}
+
+
+/* Stil für die Box, wenn die Checkbox aktiviert ist */
+
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: #2196F3;
+    /* Hintergrundfarbe der Box wenn aktiv */
+    border-color: #2196F3;
+    /* Randfarbe wenn aktiv */
+}
+
+
+/* Optional: Hinzufügen eines Häkchensymbol, wenn die Checkbox aktiviert ist */
+
+.custom-checkbox input[type="checkbox"]:checked+.checkmark:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.header {
+    @include center-flex();
+}
+
+.field-style {}

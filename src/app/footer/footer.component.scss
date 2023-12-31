@@ -1,0 +1,11 @@
+@import './../../styles.scss';
+section {
+    background-color: rgba(20, 29, 47, 1) !important;
+    height: 50px;
+    // @include padding;
+    overflow: hidden;
+}
+
+.name {
+    @include column()
+}

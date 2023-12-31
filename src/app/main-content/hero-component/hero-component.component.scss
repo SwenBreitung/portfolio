@@ -1,0 +1,63 @@
+@import './../../../styles.scss';
+section {
+    // @include center-flex($align-items: baseline);
+    // @include column();
+}
+
+.img-hero {
+    width: 70vh;
+    background-image: url(./../../../assets/brackground-img/hero-color-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    bottom: -45vw;
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: inline-block;
+    font-weight: 400;
+    font-size: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-text {
+    color: var(--second-main-color);
+    font-weight: 400;
+    font-size: 33px;
+}
+
+.hero-img {}
+
+.background-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    bottom: -45vw;
+}
+
+.hero-second-text {
+    @include column();
+    @include center-flex();
+}
+
+.hero-name {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.hero-text {
+    @include column();
+    @include center-flex();
+}
