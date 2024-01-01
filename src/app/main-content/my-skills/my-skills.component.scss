@@ -4,8 +4,8 @@ section {
     position: relative;
     gap: 15%;
     img {
-        height: 42px;
-        width: 42px;
+        height: 100px;
+        width: 100px;
         // padding: 20px 30px;
     }
     @include center-flex;
@@ -56,6 +56,7 @@ section {
 }
 
 .right-container {
+    position: relative;
     gap: 42px;
     @include column();
     @include center-flex;

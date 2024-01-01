@@ -1,11 +1,20 @@
 @import './../../styles.scss';
 section {
+    height: 150px;
     background-color: rgba(20, 29, 47, 1) !important;
-    height: 50px;
     // @include padding;
     overflow: hidden;
 }
 
+.main-text {
+    @include center-flex($justify-content: space-between, $align-items: center);
+    height: 150px;
+}
+
 .name {
     @include column()
+}
+
+.horizontal-line {
+    width: 100%;
 }

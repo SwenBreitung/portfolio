@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+// @import '~aos/dist/aos.css';
 :root {
     --main-text-color: #ffffff;
     --main-background-color: rgb(20, 28, 46);
@@ -46,6 +47,21 @@ body {
 
 .text-padding-left {
     padding-left: 48px;
+}
+
+.section-heading {
+    font-size: 70px;
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 // @mixin text-padding-left {

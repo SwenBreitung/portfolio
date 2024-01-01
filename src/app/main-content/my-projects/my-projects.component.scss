@@ -15,9 +15,16 @@ a:hover {
     text-decoration: none;
 }
 
+.header-all-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
 .header {
-    width: 70%;
-    @include center-flex();
+    width: 100%;
+    @include center-flex($justify-content: flex-end);
     h1 {
         padding: 0 20px;
         margin: 0;
@@ -25,7 +32,11 @@ a:hover {
 }
 
 .little-line {
-    width: 50px !important;
+    width: 150px !important;
+}
+
+.long-line {
+    width: 38vw !important;
 }
 
 .bg-img-join {}
@@ -50,4 +61,17 @@ a:hover {
 .skill-container {
     @include center-flex();
     width: 100%;
+}
+
+@keyframes rotateRight {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.rotate-right-animation {
+    animation: rotateRight 0.5s ease-in-out;
 }

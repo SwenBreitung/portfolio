@@ -61,3 +61,57 @@ section {
     @include column();
     @include center-flex();
 }
+
+@media(max-width:1150px) {
+    .hero-name {
+        font-weight: 700;
+        font-size: 60px;
+    }
+    .second-text {
+        font-weight: 400;
+        font-size: 33px;
+    }
+    .vertical-text {
+        font-weight: 400;
+        font-size: 51px;
+    }
+    .img-hero {
+        width: 57vh;
+    }
+}
+
+@media(max-width:1000px) {
+    .hero-name {
+        font-weight: 700;
+        font-size: 37px;
+    }
+    .second-text {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .vertical-text {
+        font-weight: 400;
+        font-size: 35px;
+    }
+    .img-hero {
+        width: 52vh;
+    }
+}
+
+@media(max-width:800px) {
+    .hero-name {
+        font-weight: 700;
+        font-size: 34px;
+    }
+    .second-text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .vertical-text {
+        font-weight: 400;
+        font-size: 32px;
+    }
+    .img-hero {
+        width: 45vh;
+    }
+}
