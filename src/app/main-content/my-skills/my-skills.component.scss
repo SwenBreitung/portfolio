@@ -61,3 +61,57 @@ section {
     @include column();
     @include center-flex;
 }
+
+@media(max-width:1050px) {
+    section {
+        img {
+            height: 75px;
+            width: 75px;
+        }
+    }
+}
+
+@media(max-width:950px) {
+    section {
+        gap: 5%;
+        img {
+            height: 75px;
+            width: 75px;
+        }
+    }
+    .container-img {
+        padding: 10px 10px 10px 0;
+    }
+}
+
+@media(max-width:800px) {
+    section {
+        gap: 5%;
+        img {
+            height: 65px;
+            width: 65px;
+        }
+    }
+    .container-img {
+        padding: 5px 5px 5px 0;
+    }
+}
+
+@media (max-width:700px) {
+    #my-skills {
+        flex-direction: column;
+        @include column($column: column-reverse);
+    }
+    app-button {
+        position: absolute;
+        bottom: -275px;
+        right: 50vw;
+    }
+    .right-container {
+        @include padding-left();
+    }
+    span {
+        display: flex;
+        text-align: center;
+    }
+}

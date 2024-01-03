@@ -60,3 +60,30 @@ section {
 .horizontal-line {
     width: 104px !important;
 }
+
+@media(max-width:1050px) {
+    .contact-info {
+        width: 70%;
+    }
+}
+
+@media(max-width:850px) {
+    .contact-info {
+        width: 80% !important;
+    }
+    .icon-bar {
+        gap: 40px;
+    }
+}
+
+@media(max-width:600px) {
+    .contact-info {
+        width: 90vw !important;
+    }
+    .vertical-container {
+        display: none;
+    }
+    .icon-bar {
+        gap: 30px
+    }
+}

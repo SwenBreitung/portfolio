@@ -49,3 +49,30 @@ section {
     height: 267px;
     width: 122.59px;
 }
+
+.section-heading {
+    width: 100%;
+}
+
+#about-me {
+    @include column()
+}
+
+@media (max-width:700px) {
+    .profile-container {
+        display: none;
+    }
+    span,
+    .info-box {
+        padding-right: 50px;
+        display: flex;
+    }
+    .section-heading {
+        display: flex;
+        justify-content: center;
+        padding-right: 50px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+}

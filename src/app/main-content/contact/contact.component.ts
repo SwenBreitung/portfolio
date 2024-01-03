@@ -9,4 +9,19 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+
+  sendEmail(){
+    var checkBox = document.getElementById('agreeCheckbox');
+    if (checkBox && checkBox instanceof HTMLInputElement) {
+      if (!checkBox.checked) {
+        return;       
+      }
+      
+
+      
+    }
+  }
 }
+
+
+

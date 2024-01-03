@@ -4,6 +4,10 @@ section {
     // @include column();
 }
 
+.hero-section {
+    display: flex;
+}
+
 .img-hero {
     width: 70vh;
     background-image: url(./../../../assets/brackground-img/hero-color-bg.svg);
@@ -113,5 +117,35 @@ section {
     }
     .img-hero {
         width: 45vh;
+    }
+}
+
+@media(max-width:700px) {
+    .hero-name {
+        font-weight: 700;
+        font-size: 34px;
+        @include z-index999();
+    }
+    .second-text {
+        font-weight: 400;
+        font-size: 18px;
+        @include z-index999();
+    }
+    .vertical-text {
+        font-weight: 400;
+        font-size: 32px;
+        @include z-index999();
+    }
+    .img-hero {
+        width: 45vh;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .background-img {
+        bottom: -25vw;
+    }
+    .hero-section {
+        flex-direction: column;
     }
 }

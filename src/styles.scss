@@ -10,8 +10,9 @@
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
-    width: calc(100vw - 15px);
+    width: 100vw;
     height: 100vh;
     background-color: var(--main-background-color);
     color: var(--main-text-color);
@@ -64,9 +65,14 @@ body {
     }
 }
 
-// @mixin text-padding-left {
-//     padding-left: 48px;
-// }
+@mixin padding-left {
+    padding-left: 48px;
+}
+
+@mixin padding-right {
+    padding-right: 48px;
+}
+
 @mixin center-flex($justify-content: center, $align-items: center) {
     display: flex;
     justify-content: $justify-content;
@@ -100,4 +106,43 @@ body {
 
 @mixin color() {
     color: var( --main-text-color);
+}
+
+@mixin z-index999() {
+    z-index: 999;
+    position: relative;
+}
+
+
+/* Anpassen des Scrollbalkens */
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Breite des Scrollbalkens */
+}
+
+
+/* Anpassen des Scrollbalken-Tracks (die Spur, auf der der Scrollbalken sitzt) */
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Hintergrundfarbe des Tracks */
+}
+
+
+/* Anpassen des Scrollbalken-Handles (der tatsächliche Scrollbalken) */
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--second-main-color);
+    /* Standardfarbe des Scrollbalkens */
+    border-radius: 10px;
+    /* Optional: Abrunden der Ecken */
+}
+
+
+/* Anpassen des Scrollbalken-Handles beim Hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover-color);
+    /* Farbe des Scrollbalkens beim Hover */
 }
