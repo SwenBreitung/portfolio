@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { TranslateService } from './../service/translate.service';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+constructor(
+  public translateService:TranslateService,
+){}
+
+switchTranslate(){
+  this.translateService.translateTorgle();
+}
+}

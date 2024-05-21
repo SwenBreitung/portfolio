@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from './../button/button.component';
+import { ButtonComponent } from './../../ui-comonents/button/button.component';
+import { TranslateService } from '../../service/translate.service';
 
 @Component({
   selector: 'app-my-skills',
@@ -12,5 +13,8 @@ import { ButtonComponent } from './../button/button.component';
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
+constructor(
+  public translateService:TranslateService,
+){}
 
 }

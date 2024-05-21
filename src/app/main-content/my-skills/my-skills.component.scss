@@ -4,9 +4,8 @@ section {
     position: relative;
     gap: 15%;
     img {
-        height: 100px;
-        width: 100px;
-        // padding: 20px 30px;
+        height: 50px;
+        width: 50px;
     }
     @include center-flex;
 }
@@ -15,6 +14,7 @@ section {
     @include center-flex;
     @include column();
     padding: 22px 22px 22px 0;
+    justify-content: flex-start;
 }
 
 .dubble-text {
@@ -32,8 +32,13 @@ section {
     width: 100%;
 }
 
+.left-container {
+    max-width: 700px;
+    gap: 8px;
+}
+
 .background-img {
-    background-image: url(./../../../assets/brackground-img/green-shadow-mySkills.svg);
+    background-image: url(./../../../assets/brackground-img/green_shadow_mySkills.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,11 +67,37 @@ section {
     @include center-flex;
 }
 
+.main-button {
+    display: flex;
+}
+
+.responsiv-button {
+    display: none;
+}
+
+@keyframes switchLogo {
+    0%,
+    100% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.container-img:hover {
+    img {
+        transform: scale(1.1);
+        animation: switchLogo 2s infinite;
+        transform-style: preserve-3d;
+    }
+}
+
 @media(max-width:1050px) {
     section {
         img {
-            height: 75px;
-            width: 75px;
+            height: 50px;
+            width: 50px;
         }
     }
 }
@@ -75,8 +106,8 @@ section {
     section {
         gap: 5%;
         img {
-            height: 75px;
-            width: 75px;
+            height: 50px;
+            width: 50px;
         }
     }
     .container-img {
@@ -87,10 +118,6 @@ section {
 @media(max-width:800px) {
     section {
         gap: 5%;
-        img {
-            height: 65px;
-            width: 65px;
-        }
     }
     .container-img {
         padding: 5px 5px 5px 0;
@@ -98,14 +125,29 @@ section {
 }
 
 @media (max-width:700px) {
+    .container-img {
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+    .left-container {
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    .main-button {
+        display: none;
+    }
+    .responsiv-button {
+        display: flex;
+    }
     #my-skills {
         flex-direction: column;
         @include column($column: column-reverse);
     }
     app-button {
-        position: absolute;
-        bottom: -275px;
-        right: 50vw;
+        padding-top: 20px;
     }
     .right-container {
         @include padding-left();
@@ -113,5 +155,15 @@ section {
     span {
         display: flex;
         text-align: center;
+        max-width: 470px
+    }
+}
+
+@media(max-width:500px) {
+    .container-img {
+        img {
+            height: 48px;
+            width: 48px;
+        }
     }
 }

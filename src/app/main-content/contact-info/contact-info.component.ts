@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '../../service/translate.service';
 
 @Component({
   selector: 'app-contact-info',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact-info.component.scss'
 })
 export class ContactInfoComponent {
-
+constructor(
+  public translateService:TranslateService,
+){}
 }

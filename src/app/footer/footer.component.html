@@ -2,16 +2,22 @@
     <div class="horizontal-line">
         <div class=" main-text">
             <div class="name text-padding-left">
-                <span>Swen</span>
-                <span>Impressum</span>
+                <span class="initials-container">Swen</span>
+                <span (click)="navigateToImpressum()" class="curser-pointer impressum">Impressum</span>
             </div>
 
-            <div>© Swen Breitung 2024</div>
+            <div class="full-name">© Swen Breitung 2024</div>
 
-            <div class="text-padding-right">
-                <img src="./../../assets/icons/Email button.svg" alt="">
-                <img src="./../../assets/icons/Github button.svg" alt="">
-                <img src="./../../assets/icons/Linkedin button.svg" alt="">
+            <div class="text-padding-right  gap d-flex z-index10">
+                <a class="icon" href="mailto:swenbreitung86@gmail.com">
+                    <img src="./assets/icons/Email_button.svg" alt="">
+                </a>
+                <a class="icon" href="https://github.com/SwenBreitung" target="_blank">
+                    <img src="./../../../assets/skills-icons/github_button.svg" alt="">
+                </a>
+                <a class="icon" href="https://linkedin.com/in/swen-breitung-323841296" target="_blank">
+                    <img src="./assets/icons/linkIn.svg" alt="">
+                </a>
             </div>
         </div>
     </div>

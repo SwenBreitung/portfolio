@@ -1,0 +1,21 @@
+@import './../../../styles.scss';
+button {
+    @include center-flex();
+    border-radius: 10px;
+    border: var(--hover-color) solid 1px;
+    background-color: var( --main-background-color);
+    color: var( --main-text-color);
+    width: 80px;
+    height: 60px;
+    text-decoration: none;
+    box-shadow: 0 0 5px var(--hover-color);
+    &:hover {
+        background-color: var(--hover-color);
+        text-decoration: none;
+        box-shadow: 0 0 5px var(--hover-color);
+    }
+}
+
+a {
+    text-decoration: none;
+}

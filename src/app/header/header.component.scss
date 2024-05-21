@@ -2,12 +2,9 @@
 section {
     @include center-flex( $justify-content: space-between);
     background-color: rgba(20, 29, 47, 1) !important;
-    height: 50px;
-    padding: 8px 0 8px 0; // @include padding;
+    height: 80px;
+    padding: 8px 0 8px 0;
     overflow: hidden;
-    // span {
-    //     text-padding-left();
-    // }
     position: fixed;
     top: 0;
     left: 0;
@@ -51,7 +48,6 @@ section {
 
 .initials:first-child {
     right: -5px;
-    /* Geringere Überlappung für bessere Lesbarkeit */
     position: absolute;
 }
 

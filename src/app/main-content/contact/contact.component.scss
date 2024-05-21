@@ -3,9 +3,49 @@ section {
     @include center-flex($align-items: baseline);
     @include column();
     position: relative;
+    width: 100%;
+}
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-bar {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.h16px {
+    height: 16px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    padding: 8px
 }
 
 .right-side {
+    padding-right: 48px;
     @include center-flex();
     @include column();
     a,
@@ -19,6 +59,11 @@ section {
         background-color: var(--main-background-color);
         margin: 5px;
         width: 100%;
+        color: var(--main-text-color);
+        padding: 10px;
+    }
+    input {
+        height: 30px;
     }
     input:hover,
     textarea:hover {
@@ -38,9 +83,13 @@ section {
         border-radius: 10px;
         border: 0px;
         margin: 24px;
+        cursor: pointer;
+    }
+    button[disabled]:hover {
+        cursor: not-allowed;
     }
     #agreeCheckbox {
-        border: var(--color-text)
+        border: var(--color-text);
     }
 }
 
@@ -84,16 +133,25 @@ section {
     transform: rotate(45deg);
 }
 
+.police-container {
+    color: var(--second-main-color)
+}
+
 .header {
     @include center-flex();
 }
 
 .all-text-area {
-    gap: 20%
+    gap: 20%;
+    width: 100%;
 }
 
 .contact-me {
     font-weight: bold;
+}
+
+.checkbox-text {
+    flex-wrap: wrap;
 }
 
 textarea:focus,
@@ -103,19 +161,20 @@ textarea:focus,
 
 .background-img {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: -252px;
+    background-size: cover;
 }
 
 @media(max-width:1050px) {
     .all-text-area {
-        gap: 6%
+        gap: 6%;
     }
 }
 
 @media(max-width:950px) {
     .all-text-area {
-        gap: 6%
+        gap: 6%;
     }
     .right-side {
         width: 42%;
@@ -138,7 +197,8 @@ textarea:focus,
         display: flex;
     }
     .right-side {
-        width: calc(100vw - 100px) !important;
+        width: 100% !important;
+        padding-right: 16px;
         @include padding-left();
     }
     #agreeCheckbox {

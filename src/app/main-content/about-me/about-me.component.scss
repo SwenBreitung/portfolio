@@ -5,6 +5,15 @@ section {
     // padding: 24px;
 }
 
+.about-me-info {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-me-text {
+    max-width: 800px;
+}
+
 .info-box {
     @include center-flex();
     padding-top: 30px;
@@ -19,7 +28,7 @@ section {
     }
 }
 
-.profile-bakcground-img {
+.profile-background-img {
     @include center-flex();
     border: green solid 1px;
     border-radius: 100%;
@@ -28,8 +37,10 @@ section {
     width: 300px;
     height: 300px;
     img {
-        width: 200px;
-        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 280px;
+        height: 280px;
     }
 }
 
@@ -38,7 +49,7 @@ section {
 }
 
 .background-style-img {
-    background-image: url(./../../../assets/brackground-img/purple-shadow.svg);
+    background-image: url(./../../../assets/brackground-img/purple_shadow.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,17 +66,29 @@ section {
 }
 
 #about-me {
-    @include column()
+    @include column();
 }
 
 @media (max-width:700px) {
+    .about-me-info {
+        justify-content: center;
+    }
     .profile-container {
         display: none;
     }
     span,
     .info-box {
-        padding-right: 50px;
         display: flex;
+        flex-direction: column;
+        span {
+            text-align: center;
+        }
+    }
+    .info-box {
+        padding-right: 50px;
+    }
+    .hero-text {
+        padding-right: 50px;
     }
     .section-heading {
         display: flex;
@@ -74,5 +97,16 @@ section {
     }
     .hero-text {
         text-align: center;
+    }
+}
+
+.info-box,
+.hero-text {
+    max-width: 500px;
+}
+
+@media(max-width:450px) {
+    .section-heading {
+        font-size: 48px;
     }
 }

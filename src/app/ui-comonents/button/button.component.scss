@@ -1,0 +1,21 @@
+button {
+    position: relative;
+    z-index: 999;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--hover-color);
+    height: 50px;
+    width: 100px;
+    color: var( --main-text-color);
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--hover-color);
+}
+
+button:hover {
+    background-color: var(--second-main-color);
+    box-shadow: 0 0 5px var(--second-main-color);
+}
+
+.curser-pointer {
+    cursor: pointer !important;
+}

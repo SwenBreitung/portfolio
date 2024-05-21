@@ -1,16 +1,11 @@
 @import './../../../styles.scss';
-section {
-    // @include center-flex($align-items: baseline);
-    // @include column();
-}
-
 .hero-section {
     display: flex;
 }
 
 .img-hero {
     width: 70vh;
-    background-image: url(./../../../assets/brackground-img/hero-color-bg.svg);
+    background-image: url(./../../../assets/brackground-img/hero_color_bg.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -41,8 +36,6 @@ section {
     font-size: 33px;
 }
 
-.hero-img {}
-
 .background-img {
     position: absolute;
     width: 100%;
@@ -64,6 +57,10 @@ section {
 .hero-text {
     @include column();
     @include center-flex();
+}
+
+.padding15px {
+    padding: 15px;
 }
 
 @media(max-width:1150px) {
@@ -143,9 +140,21 @@ section {
         align-items: center;
     }
     .background-img {
-        bottom: -25vw;
+        bottom: -15vw;
     }
     .hero-section {
         flex-direction: column;
+    }
+}
+
+@media(max-width:500px) {
+    .background-img {
+        bottom: -6vw;
+    }
+}
+
+@media(max-width:370px) {
+    .background-img {
+        bottom: 0vw;
     }
 }

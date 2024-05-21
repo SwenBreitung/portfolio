@@ -1,8 +1,7 @@
 @import './../../styles.scss';
 section {
     height: 150px;
-    background-color: rgba(20, 29, 47, 1) !important;
-    // @include padding;
+    background-color: var(--main-background-color);
     overflow: hidden;
 }
 
@@ -11,10 +10,37 @@ section {
     height: 150px;
 }
 
+.icon {
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.impressum {
+    &:hover {
+        color: var(--hover-color)
+    }
+}
+
 .name {
-    @include column()
+    @include column();
 }
 
 .horizontal-line {
     width: 100%;
+}
+
+.initials-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: #4A4A8E;
+    text-align: center;
+    display: inline-block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:700px) {
+    .full-name {
+        display: none;
+    }
 }

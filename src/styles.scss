@@ -29,6 +29,14 @@ body {
     display: flex;
 }
 
+.p16 {
+    padding: 16px;
+}
+
+.p-24 {
+    padding: 24px;
+}
+
 .gap {
     gap: 15px;
 }
@@ -54,6 +62,35 @@ body {
     font-size: 70px;
 }
 
+.curser-pointer {
+    cursor: pointer !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+app-footer {
+    z-index: 999;
+}
+
+app-contact,
+app-root {
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.width100p {
+    width: 100%;
+}
+
+app-main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 @keyframes fadeLeft {
     from {
         opacity: 0;
@@ -65,12 +102,12 @@ body {
     }
 }
 
-@mixin padding-left {
-    padding-left: 48px;
+@mixin padding-left($padding: 48px) {
+    padding-left: $padding;
 }
 
-@mixin padding-right {
-    padding-right: 48px;
+@mixin padding-right($padding: 48px) {
+    padding-right: $padding;
 }
 
 @mixin center-flex($justify-content: center, $align-items: center) {
@@ -113,36 +150,19 @@ body {
     position: relative;
 }
 
-
-/* Anpassen des Scrollbalkens */
-
 ::-webkit-scrollbar {
     width: 10px;
-    /* Breite des Scrollbalkens */
 }
-
-
-/* Anpassen des Scrollbalken-Tracks (die Spur, auf der der Scrollbalken sitzt) */
 
 ::-webkit-scrollbar-track {
     background: transparent;
-    /* Hintergrundfarbe des Tracks */
 }
-
-
-/* Anpassen des Scrollbalken-Handles (der tatsächliche Scrollbalken) */
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--second-main-color);
-    /* Standardfarbe des Scrollbalkens */
     border-radius: 10px;
-    /* Optional: Abrunden der Ecken */
 }
-
-
-/* Anpassen des Scrollbalken-Handles beim Hover */
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--hover-color);
-    /* Farbe des Scrollbalkens beim Hover */
 }

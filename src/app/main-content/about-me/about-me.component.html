@@ -1,23 +1,54 @@
-<section class="z-index10 d-flex text-padding-left" id="about-me" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<section class="z-index10 d-flex text-padding-left" id="about-me">
     <h1 class="section-heading">About Me</h1>
-    <div class="d-flex">
-        <div class="">
+    <div class="d-flex about-me-info">
+        <div class="about-me-text">
+            @if (translateService.de) {
             <span class="hero-text">
-            Hi, I am a Front-end deverloper based in München, Germany(....)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor sem non tempus convallis. Integer et justo vitae urna finibus eleifend sit amet porttitor sapien. Donec sollicitudin massa vel lorem vestibulum efficitur.
-        </span>
+                Als Webentwickler fokussiere ich mich auf die Schaffung intuitiver Benutzeroberflächen mittels JavaScript und Angular. Mein beruflicher Weg hat mich von der Programmierung in Java zur Front- und Backend-Entwicklung geführt, wobei ich mein Fachwissen stets durch kontinuierliche Weiterbildung in aktuellen Webtechnologien erweitere. Teamarbeit und die Verbesserung bestehender Prozesse sind für mich ebenso selbstverständlich wie das eigenständige Einarbeiten in neue Codes. Meine Zeit bei der Bundeswehr hat mir nicht nur ein starkes organisatorisches Fundament gegeben, sondern auch die Bedeutung von Technologie und IT-Sicherheit nahegebracht.   
+            </span>} @if (translateService.en) {
+            <span>
+                As a web developer, I focus on creating intuitive user interfaces using
+                JavaScript and Angular. My career path has taken me from programming in
+                Java to front-end and back-end development, continuously expanding my
+                expertise through ongoing education in current web technologies.
+                Teamwork and improving existing processes are as natural to me as
+                independently getting to grips with new code. My time in the military
+                provided me with a strong organizational foundation and highlighted the
+                importance of technology and IT security.
+            </span>}
             <div class="info-box">
-                <img src="./../../../assets/icons/bulb desktop.svg" alt="">
-                <span>Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </span>
+                <img src="./../../../assets/icons/about_me_puzzel.svg" alt="" /> @if (translateService.de) {
+                <span>
+                    In meiner Freizeit bilde ich mich an der Bootstrap Academy weiter, wo
+                    ich viele theoretische Grundlagen in allen Bereichen der IT lerne.
+                    Dies bietet einen guten Ausgleich zu meiner praktischen Arbeit. Zudem
+                    beschäftige ich mich mit YouTube und spiele gerne Strategiespiele, die
+                    lösungsorientierte Ansätze erfordern.
+                </span> } @if (translateService.en) {
+                <span>
+                    In my free time, I continue my education at the Bootstrap Academy,
+                    where I learn many theoretical fundamentals in all areas of IT. This
+                    provides a good balance to my practical work. Additionally, I engage
+                    with YouTube and enjoy playing strategy games that require
+                    solution-oriented approaches.
+                </span> }
             </div>
             <div class="info-box">
-                <img src="./../../../assets/icons/puzzle desktop.svg" alt="">
-                <span>Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </span>
+                <img src="./../../../assets/icons/about_me_lamp.svg" alt="" /> @if (translateService.de) {
+                <span>
+                    Während der Pandemie hatte ich Zeit, mich intensiv mit der Programmierung zu beschäftigen. Ich begann mit Karel und einfachen Java-Anwendungen und stellte schnell fest, dass mir das Programmieren liegt. Daher entschied ich mich, es professionell zu erlernen.    
+                </span>} @if (translateService.en) {
+                <span>
+                    During the pandemic, I had time to immerse myself in programming. I
+                    started with Karel and simple Java applications and quickly realized
+                    that I had a knack for programming. Therefore, I decided to pursue it
+                    professionally.
+                </span> }
             </div>
         </div>
-
-        <div class="profile-container d-flex">
-            <div class="profile-bakcground-img">
-                <img src="./../../../assets/profiel-img/Second-dummy profiele.png" alt="">
+        <div class="profile-container d-flex" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div class="profile-background-img">
+                <img src="./../../../assets/profiel-img/breitung-profiel.jpg" alt="" />
             </div>
             <div class="horizontal-line"></div>
         </div>

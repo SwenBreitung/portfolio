@@ -1,6 +1,5 @@
 @import './../../../styles.scss';
 section {
-    // background-image: url();
     background-repeat: no-repeat;
     z-index: 50;
     justify-content: space-between;
@@ -19,11 +18,8 @@ section {
     transform: rotate(180deg);
     position: relative;
     font-size: 20px;
-    /* Anpassen nach Bedarf */
     color: #333;
-    /* Textfarbe */
     height: 100px;
-    /* Anpassen nach Bedarf */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,26 +31,28 @@ section {
     align-items: center;
 }
 
-.vertical-text {
-    writing-mode: vertical-lr;
-    font-size: 20px;
-    /* Anpassen nach Bedarf */
-    color: #333;
-    /* Textfarbe */
-    text-align: center;
-}
-
 .arrow {
     font-size: 25px;
-    /* Größe des Pfeilsymbols anpassen */
     color: #333;
-    /* Farbe des Pfeilsymbols */
     padding-top: 10px;
-    /* Abstand zwischen Text und Pfeil */
 }
 
 .icon-bar {
-    gap: 70px;
+    gap: 30px;
+}
+
+.icon {
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.email {
+    color: var(--main-text-color);
+    text-decoration: none;
+    &:hover {
+        color: var(--hover-color);
+    }
 }
 
 .horizontal-line {
@@ -84,6 +82,15 @@ section {
         display: none;
     }
     .icon-bar {
-        gap: 30px
+        gap: 30px;
+    }
+    .contact-info {
+        padding-top: 32px;
+    }
+}
+
+@media(max-width:450px) {
+    .email {
+        display: none;
     }
 }
