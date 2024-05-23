@@ -1,5 +1,9 @@
 <section class="z-index10 d-flex text-padding-left" id="about-me">
+    @if (translateService.de) {
+    <h1 class="section-heading">Über Mich</h1>
+    }@if (translateService.en) {
     <h1 class="section-heading">About Me</h1>
+    }
     <div class="d-flex about-me-info">
         <div class="about-me-text">
             @if (translateService.de) {

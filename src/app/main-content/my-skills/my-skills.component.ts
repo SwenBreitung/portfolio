@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from './../../ui-comonents/button/button.component';
 import { TranslateService } from '../../service/translate.service';
+import { LayoutService } from '../../service/layout.service';
 
 @Component({
   selector: 'app-my-skills',
@@ -15,6 +16,7 @@ import { TranslateService } from '../../service/translate.service';
 export class MySkillsComponent {
 constructor(
   public translateService:TranslateService,
+  public layoutService:LayoutService,
 ){}
 
 }

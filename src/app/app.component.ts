@@ -24,8 +24,11 @@ import { PolicyComponent } from "./policy/policy.component";
 
 export class AppComponent {
   title = 'portfolio';
+  router: any;
  ngOnInit(): void {
   AOS.init();
   }
+
+
 }
 

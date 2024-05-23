@@ -1,1 +1,12 @@
-<button style="cursor: pointer;"><ng-content class="curser-pointer"></ng-content></button>
+<section (click)="handleClick($event)" class="curser-pointer" [style]="{
+    'background-color': backgroundColor || null,
+    'border-color': borderColor || null,
+    'border-width': borderWidth || null,
+    'border-radius': borderRadius || null,
+    'width': width || null,
+    'height': height || null,
+    'padding': padding || null,
+    'margin': margin || null
+}">
+    {{ text }}
+</section>

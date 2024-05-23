@@ -11,9 +11,7 @@ export class FooterComponent {
   constructor(
     private router: Router
   ){}
-  ngOnInit() {
-    console.log('FooterComponent initialized');
-  }
+
 
   navigateToImpressum() {
     this.router.navigate(['/impressum']);

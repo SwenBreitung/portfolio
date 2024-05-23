@@ -1,4 +1,5 @@
-button {
+@import './../../../styles.scss';
+section {
     position: relative;
     z-index: 999;
     border: none;
@@ -9,9 +10,10 @@ button {
     color: var( --main-text-color);
     cursor: pointer;
     box-shadow: 0 0 5px var(--hover-color);
+    @include center-flex;
 }
 
-button:hover {
+section:hover {
     background-color: var(--second-main-color);
     box-shadow: 0 0 5px var(--second-main-color);
 }

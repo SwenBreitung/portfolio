@@ -7,6 +7,7 @@
     --second-main-color: rgba(151, 71, 255, 1);
     --hover-color: rgb(112, 230, 28);
     --color-text: rgb(80, 156, 36);
+    --main-background-color-hover: rgba(9, 12, 20, 0.5);
 }
 
 body {
@@ -35,6 +36,10 @@ body {
 
 .p-24 {
     padding: 24px;
+}
+
+.gap8 {
+    gap: 8px;
 }
 
 .gap {

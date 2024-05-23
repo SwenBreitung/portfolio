@@ -1,5 +1,5 @@
 <section class="z-index10" id="my-skills">
-    <app-button class="responsiv-button">Get in touch</app-button>
+    <app-button (click)="layoutService.scrollToSection('contact-me')" class="responsiv-button" text="Get in touch"></app-button>
     <div class="d-flex text-padding-left z-index10 left-container" style="" data-aos="fade-up-right">
 
         <div class="container-img">
@@ -74,14 +74,25 @@
     <div class="right-container text-padding-right" data-aos="fade-down-left">
         <div>
             <div class=" flex-center header ">
+                @if (translateService.de) {
+                <h1 class="section-heading ">Meine Skills</h1>
+                }@if (translateService.en) {
                 <h1 class="section-heading ">My Skills</h1>
+                }
                 <div class="horizontal-line" style="position:absolute; right: 0; "></div>
             </div>
+            @if (translateService.de) {
             <span>
-                I have grown my Fullstack developments skills that have allowed me to create different real projects.
-            </span>
-        </div>
-        <app-button class="main-button">Get in touch</app-button>
+                Ich habe meine Fullstack-Entwicklungsfähigkeiten ausgebaut, was es mir ermöglicht hat, verschiedene reale Projekte zu erstellen.
+            </span> } @if (translateService.en) {
+            <span>
+                    I have grown my Fullstack developments skills that have allowed me to create different real projects.
+                </span> }
+        </div> @if (translateService.de) {
+        <app-button (click)="layoutService.scrollToSection('portfolio')" class="main-button" text="Klick mich"></app-button>
+        } @if (translateService.en) {
+        <app-button (click)="layoutService.scrollToSection('contact-me')" class="main-button" text="Get in touch"></app-button>
+        }
     </div>
     <div class="background-img "></div>
 

@@ -6,10 +6,13 @@
             <h1 class="section-heading">Portfolio</h1>
             <div class="horizontal-line long-line"></div>
         </div>
-        <div>
+        <div>@if (translateService.de) {
+            <span class="info-text">
+                Diese Seite ist ein Beispiel meiner Arbeit - probieren Sie sie gerne aus
+            </span>}@if (translateService.en) {
             <span class="info-text">
                 This page is a sample of my work - please feel free to try them out.
-            </span>
+            </span>}
         </div>
     </div>
 </section>
@@ -22,18 +25,25 @@
                     <app-info-text class="container-left-text">
                         <h2>DABubble</h2>
                         <h3>Angular | Firebase | Material Design</h3>
+                        @if (translateService.de) {
                         <span class="text-left">
-              I've developed a Slack clone using Angular, Firebase, and Material
-              Design. This app enables real-time chats, private messaging, and
-              channel creation—ideal for teams in need of fast and streamlined
-              communication.
-            </span>
+                            I've developed a Slack clone using Angular, Firebase, and Material
+                            Design. This app enables real-time chats, private messaging, and
+                            channel creation—ideal for teams in need of fast and streamlined
+                            communication.
+                        </span> } @if (translateService.en) {
+                        <span class="text-left">
+                            I've developed a Slack clone using Angular, Firebase, and Material
+                            Design. This app enables real-time chats, private messaging, and
+                            channel creation—ideal for teams in need of fast and streamlined
+                            communication.
+                        </span> }
                     </app-info-text>
                     <div class="d-flex gap" style="padding: 10px">
                         <a href="https://swen-breitung.de/" target="_blank" rel="noopener noreferrer">
                             <app-button-left></app-button-left>
                         </a>
-                        <a href="https://github.com/SwenBreitung/join" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/SwenBreitung/daBubble" target="_blank" rel="noopener noreferrer">
                             <app-button-right></app-button-right>
                         </a>
                     </div>
@@ -57,13 +67,17 @@
                 <app-info-text class="all-text-right">
                     <h2>EllPolloloco</h2>
                     <h3>JavaScript | HTML | CSS</h3>
+                    @if (translateService.de) {
                     <span class="info-text-right">
-            Ell Polloco' is a compact jump-and-run game in a cartoon style.
-            Here, the objective is to defeat enemies with targeted jumps and
-            outsmart the final boss using cleverly deployed salsa bottles.
-            Special attention is required for the small chicks summoned by the
-            boss, which attack the player.
-          </span>
+                        „Ell Polloco“ ist ein kompaktes Jump-and-Run-Spiel im Cartoon-Stil. Das Ziel ist es, Feinde mit gezielten Sprüngen zu besiegen und den Endboss mit geschickt platzierten Salsa-Flaschen auszutricksen. Besondere Aufmerksamkeit erfordern die kleinen Küken, die vom Boss herbeigerufen werden und den Spieler angreifen.
+                    </span> }@if (translateService.en) {
+                    <span class="info-text-right">
+                        Ell Polloco' is a compact jump-and-run game in a cartoon style.
+                        Here, the objective is to defeat enemies with targeted jumps and
+                        outsmart the final boss using cleverly deployed salsa bottles.
+                        Special attention is required for the small chicks summoned by the
+                        boss, which attack the player.
+                    </span> }
                 </app-info-text>
                 <div class="d-flex gap" style="padding: 10px">
                     <a href="https://ell-polloco.swen-breitung.de/" target="_blank" rel="noopener noreferrer">
@@ -84,13 +98,13 @@
                     <app-info-text class="container-left-text">
                         <h2>Join</h2>
                         <h3>JavaScript | HTML | CSS</h3>
+                        @if (translateService.de) {
                         <span class="text-left">
-                            My Kanban board combines contact management and task planning in a
-                            seamless, user-friendly tool. It allows for efficient storage of
-                            contacts, easy creation of tasks, and their structured
-                            organization. With our intuitive drag-and-drop interface, you can
-                            always keep track of your projects and boost your productivity.
-                        </span>
+                            Mein Kanban-Board kombiniert Kontaktmanagement und Aufgabenplanung in einem nahtlosen, benutzerfreundlichen Tool. Es ermöglicht die effiziente Speicherung von Kontakten, die einfache Erstellung von Aufgaben und deren strukturierte Organisation. Mit unserer intuitiven Drag-and-Drop-Oberfläche können Sie Ihre Projekte immer im Blick behalten und Ihre Produktivität steigern.
+                        </span>}@if (translateService.en) { <span class="text-left">
+                            My Kanban board combines contact management and task planning in a seamless, user-friendly tool. It allows for efficient storage of contacts, easy creation of tasks, and
+                            their structured organization. With our intuitive drag-and-drop interface, you can always keep track of your projects and boost your productivity. 
+                        </span>}
                     </app-info-text>
                     <div class="d-flex gap" style="padding: 10px">
                         <a href="https://join.swen-breitung.de/" target="_blank" rel="noopener noreferrer">
@@ -121,12 +135,16 @@
             <app-info-text class="all-text-right">
                 <h2>Flix Tube</h2>
                 <h3>Angular | HTML | CSS | DRF</h3>
+                @if (translateService.de) {
                 <span class="info-text-right">
-          Flix Tube ist eine Videoplattform die auf Youtube aufgebaut ist. Diese
-          wird im kern mit Angular sowie DRF geschrieben wo man selbst Videos in
-          unterschiedlichen Auflösungen hochladen kann. Außerdem hat diese noch
-          einen zusätzlichen Simple Chat.
-        </span>
+                    Flix Tube ist eine Videoplattform die auf Youtube aufgebaut ist. Diese
+                    wird im kern mit Angular sowie DRF geschrieben wo man selbst Videos in
+                    unterschiedlichen Auflösungen hochladen kann. Außerdem hat diese noch
+                    einen zusätzlichen Simple Chat.
+                </span>} @if (translateService.en) {
+                <span class="info-text-right">
+                    Flix Tube is a video platform built on the foundation of YouTube. It is primarily developed using Angular and Django REST Framework (DRF). On this platform, users can upload their own videos in various resolutions. Additionally, Flix Tube features a simple chat.
+                </span>}
             </app-info-text>
             <div class="d-flex gap" style="padding: 10px">
                 <a href="" target="_blank" rel="noopener noreferrer">
@@ -139,6 +157,6 @@
         </div>
     </div>
     <div class="background-img">
-        <img src="./assets/brackground-img/Purple-shadow-skills.svg" alt="" />
+        <img src="./assets/brackground-img/Purple_shadow_skills.svg" alt="" />
     </div>
 </section>
