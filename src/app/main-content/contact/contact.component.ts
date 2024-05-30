@@ -38,7 +38,7 @@ export class ContactComponent {
     }
     
   post = {
-    endPoint: 'http://portfolio.swen-breitung.de/sendMail.php',
+    endPoint: 'https://portfolio.swen-breitung.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

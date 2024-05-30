@@ -182,3 +182,12 @@ img {
         }
     }
 }
+
+@media(max-width:500px) {
+    .text-padding-left {
+        padding-left: 16px !important;
+    }
+    .text-padding-right {
+        padding-right: 16px !important;
+    }
+}

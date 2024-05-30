@@ -5,6 +5,8 @@ import {MyProjectsComponent} from './my-projects/my-projects.component'
 import {ContactComponent} from './contact/contact.component';
 import {HeroComponentComponent} from './hero-component/hero-component.component'
 import {ContactInfoComponent} from './contact-info/contact-info.component'
+import {DialogGitComponent} from './../ui-comonents/dialog-git/dialog-git.component'
+
 @Component({
   selector: 'app-main-content',
   standalone: true,
@@ -14,7 +16,8 @@ import {ContactInfoComponent} from './contact-info/contact-info.component'
     ContactComponent,
     MyProjectsComponent,
     HeroComponentComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    DialogGitComponent
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'

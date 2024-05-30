@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import{MainContentComponent} from './main-content/main-content.component';
 import * as AOS from 'aos';
 import { PolicyComponent } from "./policy/policy.component";
+import { DialogGitComponent } from "./ui-comonents/dialog-git/dialog-git.component";
 
 @Component({
     selector: 'app-root',
@@ -19,6 +20,7 @@ import { PolicyComponent } from "./policy/policy.component";
         HeaderComponent,
         MainContentComponent,
         PolicyComponent,
+        DialogGitComponent
     ]
 })
 

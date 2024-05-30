@@ -23,7 +23,7 @@
                 Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.
             </p>
             }
-            <div>
+            <div class="text-contact-me">
                 @if (translateService.de) {
                 <span>
                     Brauchen Sie einen Frontend-Entwickler?
@@ -31,12 +31,12 @@
                 <span>
                 Need a Frontend developer? 
                 </span> }@if (translateService.de) {
-                <span class="contact-me">
-                Kontaktieren Sie mich!
-            </span> } @if (translateService.en) {
-                <span class="contact-me">
+                <p class="contact-me">
+                    Kontaktieren Sie mich!
+                </p> } @if (translateService.en) {
+                <p class="contact-me">
                     Contact me!
-                </span> }
+                </p> }
             </div>
         </div>
 
@@ -107,7 +107,7 @@
                         <span> I've read the </span>
                         <br>
                         <div class="police-container curser-pointer" (click)="navigateToPolicy()">
-                            &nbsp;Police&nbsp; </div><br>
+                            &nbsp;Policy&nbsp; </div><br>
                         <span> and agree to the processing of my data as outlined.</span>
                     </div>
                     }

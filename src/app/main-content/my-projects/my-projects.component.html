@@ -60,7 +60,7 @@
         <div class="skill-container-img-left z-index10">
             <div class="all-left">
                 <div class="img all-text-left" data-aos="zoom-out-right">
-                    <img src="./assets/brackground-img/ell_polloco.svg" alt="" />
+                    <img src="./assets/brackground-img/ell_polloco.png" alt="" />
                 </div>
             </div>
             <div class="container-right-text z-index10">
@@ -83,7 +83,7 @@
                     <a href="https://ell-polloco.swen-breitung.de/" target="_blank" rel="noopener noreferrer">
                         <app-button-left></app-button-left>
                     </a>
-                    <a href="https://github.com/SwenBreitung/PolloPollo loco 1.svg" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/SwenBreitung/EllPolloloco" target="_blank" rel="noopener noreferrer">
                         <app-button-right></app-button-right>
                     </a>
                 </div>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="container-right-img" data-aos="fade-down-left">
                     <div class="p-24 center img ">
-                        <img src="./assets/brackground-img/join.svg" alt="">
+                        <img src="./../../../assets/brackground-img/join_img.png" alt="">
                     </div>
                 </div>
             </div>
@@ -147,12 +147,12 @@
                 </span>}
             </app-info-text>
             <div class="d-flex gap" style="padding: 10px">
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <app-button-left class="deactivate"></app-button-left>
-                </a>
-                <a href="https://github.com/SwenBreitung/PolloPollo loco 1.svg" target="_blank" rel="noopener noreferrer">
-                    <app-button-right></app-button-right>
-                </a>
+
+                <app-button-left class="deactivate" backgroundColor="grey"></app-button-left>
+
+
+                <app-button-right (click)="layoutService.torgleDialog()"></app-button-right>
+
             </div>
         </div>
     </div>

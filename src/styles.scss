@@ -4,6 +4,7 @@
 :root {
     --main-text-color: #ffffff;
     --main-background-color: rgb(20, 28, 46);
+    --transparent: rgba(151, 71, 255, 0.5, );
     --second-main-color: rgba(151, 71, 255, 1);
     --hover-color: rgb(112, 230, 28);
     --color-text: rgb(80, 156, 36);
@@ -40,6 +41,10 @@ body {
 
 .gap8 {
     gap: 8px;
+}
+
+.gap16 {
+    gap: 16px;
 }
 
 .gap {
@@ -94,6 +99,13 @@ app-main-content {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+app-about-me,
+app-hero-component,
+app-contact-info {
+    width: 100%;
 }
 
 @keyframes fadeLeft {
@@ -170,4 +182,13 @@ app-main-content {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--hover-color);
+}
+
+@media(max-width:500px) {
+    .text-padding-right {
+        padding-right: 16px;
+    }
+    .text-padding-left {
+        padding-left: 16px;
+    }
 }

@@ -1,0 +1,17 @@
+@if(layoutService.dialogGit){
+<section (click)="layoutService.torgleDialog()">
+    <div (click)="stopPropagation($event)" class="dialog">
+        <h1>flix-tube</h1>
+        <img src="./../../../assets/brackground-img/comming_soon.jpg" alt="img">
+        <div class="d-flex gap16">
+            <a href="https://github.com/SwenBreitung/join" target="_blank" rel="noopener noreferrer">
+                <app-button-left text="Frontend"></app-button-left>
+            </a>
+            <a href="https://github.com/SwenBreitung/flix-tube-backend" target="_blank" rel="noopener noreferrer">
+                <app-button-right text="Backend"></app-button-right>
+            </a>
+        </div>
+        <app-button-left text="Back" (click)="layoutService.torgleDialog()">Back</app-button-left>
+    </div>
+</section>
+}

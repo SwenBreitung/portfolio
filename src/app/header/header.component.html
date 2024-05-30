@@ -13,7 +13,9 @@
         <a class="curser-pointer responsiv-none" (click)="layoutService.scrollToSection('about-me')">About Me</a> }
 
         <a class="curser-pointer responsiv-none" (click)="layoutService.scrollToSection('my-skills')">Skills</a>
-        <a class="curser-pointer responsiv-none" (click)="layoutService.scrollToSection('portfolio')">Portfolio</a>
+        <a class="curser-pointer responsiv-none" (click)="layoutService.scrollToSection('portfolio')">Portfolio</a> @if (translateService.en) {
+        <a class="curser-pointer" (click)="layoutService.scrollToSection('contact-me')">Contact</a> }@if (translateService.de) {
+        <a class="curser-pointer" (click)="layoutService.scrollToSection('contact-me')">Kontakt</a> }
         <img class="responsiv-none" (click)=" switchTranslateToEnglish()" [style.filter]="translateService.en  ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/english-flag.png" alt="">
         <img class="responsiv-none" (click)="switchTranslateToGerman()" [style.filter]="translateService.de ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/german-flag.png" alt="">
         <div (click)="closeMenu()" class="menu-button curser-pointer">
@@ -35,6 +37,7 @@
 
         <a class="curser-pointer" (click)="layoutService.scrollToSection('my-skills')">Skills</a>
         <a class="curser-pointer" (click)="layoutService.scrollToSection('portfolio')">Portfolio</a>
+        <a class="curser-pointer" (click)="layoutService.scrollToSection('contact-me')">Contact</a>
         <div class="d-flex gap8 img-container">
             <img (click)=" switchTranslateToEnglish()" [style.filter]="translateService.en  ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/english-flag.png" alt="">
             <img (click)="switchTranslateToGerman()" [style.filter]="translateService.de ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/german-flag.png" alt="">

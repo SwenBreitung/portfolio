@@ -198,8 +198,9 @@ textarea:focus,
     }
     .right-side {
         width: 100% !important;
-        padding-right: 16px;
-        @include padding-left();
+        padding-right: 48px;
+        padding-left: 48px;
+        @include padding-left(16);
     }
     #agreeCheckbox {
         top: 0px;
@@ -207,5 +208,42 @@ textarea:focus,
     }
     .data-agreement-section {
         font-size: 14px;
+    }
+    span,
+    p,
+    h2 {
+        text-align: center;
+    }
+    .text-contact-me {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .background-img {
+        bottom: 0;
+        width: 179px;
+        right: 0;
+    }
+}
+
+@media(max-width:500px) {
+    section {
+        width: 100%
+    }
+    .text-padding-left {
+        padding-left: 16px;
+    }
+    .right-side {
+        width: 100% !important;
+        padding-right: 16px;
+        padding-left: 16px;
+        @include padding-left(16);
+    }
+    .right-side {
+        span {
+            white-space: wrap;
+            text-align: start;
+        }
     }
 }

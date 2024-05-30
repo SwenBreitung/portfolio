@@ -269,3 +269,14 @@ a:hover {
         background-color: grey !important;
     }
 }
+
+@media(max-width:500px) {
+    .skill-container-img-right {
+        padding-left: 0;
+    }
+    .info-text-right,
+    .text-left,
+    .info-text {
+        width: 300px;
+    }
+}

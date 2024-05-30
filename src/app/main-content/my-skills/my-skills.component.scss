@@ -160,10 +160,27 @@ section {
 }
 
 @media(max-width:500px) {
+    h1 {
+        font-size: 48px
+    }
     .container-img {
         img {
             height: 48px;
             width: 48px;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .section-heading {
+        font-size: 48px
+    }
+    .text-padding-left {
+        width: 320px
+    }
+    .right-container {
+        span {
+            width: 320px
         }
     }
 }
