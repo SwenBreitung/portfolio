@@ -134,7 +134,8 @@ section {
 }
 
 .police-container {
-    color: var(--second-main-color)
+    color: var(--second-main-color);
+    cursor: pointer;
 }
 
 .header {
@@ -164,6 +165,38 @@ textarea:focus,
     bottom: 0;
     right: -252px;
     background-size: cover;
+}
+
+.sending-button {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    background-color: var(--main-background-color);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.arrow-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 16px 16px 16px;
+    .arrow-img {
+        position: relative;
+        z-index: 50;
+        padding: 20px;
+        background-image: url('./../../../assets/icons/up_arrow_white.svg');
+        background-repeat: no-repeat;
+        &:hover {
+            background-image: url('./../../../assets/icons/up_arrow_green.svg');
+        }
+    }
 }
 
 @media(max-width:1050px) {

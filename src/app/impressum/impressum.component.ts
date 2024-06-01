@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { TranslateService } from './../service/translate.service';
+import { NavigationEnd, Router } from '@angular/router';
 @Component({
   selector: 'app-impressum',
   standalone: true,
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './impressum.component.scss'
 })
 export class ImpressumComponent {
+  constructor(public translateService: TranslateService,
+    private router: Router
+  ) {
+
+  }
 
 }

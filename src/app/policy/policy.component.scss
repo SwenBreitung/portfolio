@@ -1,11 +1,26 @@
 @import './../../styles.scss';
 .police-container {
     padding-top: 56px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    max-width: 1150px;
+}
+
+.max-container {
+    display: flex;
+    justify-content: center;
 }
 
 a {
     color: var(--second-main-color);
     text-decoration: none;
+}
+
+@media(max-width:500px) {
+    .police-container {
+        padding-top: 56px;
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 1150px;
+    }
 }

@@ -5,7 +5,7 @@ section {
 }
 
 #portfolio {
-    padding-top: 150px;
+    padding-top: 74px;
 }
 
 h3 {
@@ -107,9 +107,14 @@ a:hover {
 .img {
     display: flex;
     height: 351px;
+    width: 340px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    img {
+        height: 351px;
+        width: 340px;
+    }
 }
 
 .skill-overlay {
@@ -151,10 +156,10 @@ a:hover {
 }
 
 .background-img {
+    display: none;
     position: absolute;
     top: 0;
-    left: -187px;
-    right: 50%;
+    left: -352px;
     img {
         background-size: cover;
         width: auto;
@@ -226,16 +231,9 @@ a:hover {
         margin-bottom: 50px;
     }
     .all-text-right {
-        // width: 50vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .background-img {
-        img {
-            // width: 601px;
-            // height: 541px;
-        }
     }
 }
 
@@ -256,7 +254,7 @@ a:hover {
 
 @media(max-width:400px) {
     .flix-tube,
-    .img-dabubble {
+    .img-second {
         img {
             width: 257px;
             height: 169px;
@@ -274,9 +272,9 @@ a:hover {
     .skill-container-img-right {
         padding-left: 0;
     }
-    .info-text-right,
-    .text-left,
-    .info-text {
-        width: 300px;
-    }
+    // .info-text-right,
+    // .text-left,
+    // .info-text {
+    //     width: 300px;
+    // }
 }

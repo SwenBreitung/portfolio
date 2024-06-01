@@ -1,30 +1,31 @@
 <section>
-    <div class="initials-container text-padding-left">
-        <span class="emphasis">&#10094;</span>
-        <span class="initials">S</span>
-        <span class="initials">B</span>
-        <span class="emphasis">&#10095;</span>
-    </div>
+    <div class="d-flex inline-container">
+        <div (click)="returnToMainSide()" class="initials-container curser-pointer text-padding-left">
+            <span class="emphasis">&#10094;</span>
+            <span class="initials">S</span>
+            <span class="initials">B</span>
+            <span class="emphasis">&#10095;</span>
+        </div>
 
 
-    <div class="navbar text-padding-right">
-        @if (translateService.de) {
-        <a class="curser-pointer responsiv-none" (click)="layoutService.scrollToSection('about-me')">Über Mich</a> }@if (translateService.en) {
-        <a class="curser-pointer responsiv-none" (click)="layoutService.scrollToSection('about-me')">About Me</a> }
+        <div class="navbar text-padding-right">
+            @if (translateService.de) {
+            <a class="curser-pointer responsiv-none" (click)="layoutService.navigateToMainAndScroll('about-me')">Über Mich</a> }@if (translateService.en) {
+            <a class="curser-pointer responsiv-none" (click)="layoutService.navigateToMainAndScroll('about-me')">About Me</a> }
 
-        <a class="curser-pointer responsiv-none" (click)="layoutService.scrollToSection('my-skills')">Skills</a>
-        <a class="curser-pointer responsiv-none" (click)="layoutService.scrollToSection('portfolio')">Portfolio</a> @if (translateService.en) {
-        <a class="curser-pointer" (click)="layoutService.scrollToSection('contact-me')">Contact</a> }@if (translateService.de) {
-        <a class="curser-pointer" (click)="layoutService.scrollToSection('contact-me')">Kontakt</a> }
-        <img class="responsiv-none" (click)=" switchTranslateToEnglish()" [style.filter]="translateService.en  ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/english-flag.png" alt="">
-        <img class="responsiv-none" (click)="switchTranslateToGerman()" [style.filter]="translateService.de ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/german-flag.png" alt="">
-        <div (click)="closeMenu()" class="menu-button curser-pointer">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <a class="curser-pointer responsiv-none" (click)="layoutService.navigateToMainAndScroll('my-skills')">Skills</a>
+            <a class="curser-pointer responsiv-none" (click)="layoutService.navigateToMainAndScroll('portfolio')">Portfolio</a> @if (translateService.en) {
+            <a class="curser-pointer" (click)="layoutService.navigateToMainAndScroll('contact-me')">Contact</a> }@if (translateService.de) {
+            <a class="curser-pointer" (click)="layoutService.navigateToMainAndScroll('contact-me')">Kontakt</a> }
+            <img class="responsiv-none" (click)=" switchTranslateToEnglish()" [style.filter]="translateService.en  ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/english-flag.png" alt="">
+            <img class="responsiv-none" (click)="switchTranslateToGerman()" [style.filter]="translateService.de ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/german-flag.png" alt="">
+            <div (click)="closeMenu()" class="menu-button curser-pointer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
     </div>
-
 </section>
 @if (isMenuOpen) {
 <div (click)="closeMenu()" class="menu-dialog">
@@ -32,12 +33,12 @@
         @if (translateService.de) {
         <h1>Menü</h1>} @if (translateService.en) {
         <h1>Menu</h1>} @if (translateService.de) {
-        <a class="curser-pointer" (click)="layoutService.scrollToSection('about-me')">Über Mich</a> }@if (translateService.en) {
-        <a class="curser-pointer" (click)="layoutService.scrollToSection('about-me')">About Me</a> }
+        <a class="curser-pointer" (click)="layoutService.navigateToMainAndScroll('about-me')">Über Mich</a> }@if (translateService.en) {
+        <a class="curser-pointer" (click)="layoutService.navigateToMainAndScroll('about-me')">About Me</a> }
 
-        <a class="curser-pointer" (click)="layoutService.scrollToSection('my-skills')">Skills</a>
-        <a class="curser-pointer" (click)="layoutService.scrollToSection('portfolio')">Portfolio</a>
-        <a class="curser-pointer" (click)="layoutService.scrollToSection('contact-me')">Contact</a>
+        <a class="curser-pointer" (click)="layoutService.navigateToMainAndScroll('my-skills')">Skills</a>
+        <a class="curser-pointer" (click)="layoutService.navigateToMainAndScroll('portfolio')">Portfolio</a>
+        <a class="curser-pointer" (click)="layoutService.navigateToMainAndScroll('contact-me')">Contact</a>
         <div class="d-flex gap8 img-container">
             <img (click)=" switchTranslateToEnglish()" [style.filter]="translateService.en  ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/english-flag.png" alt="">
             <img (click)="switchTranslateToGerman()" [style.filter]="translateService.de ? 'none' : 'grayscale(100%)'" src="./../../assets/icons/german-flag.png" alt="">
@@ -46,4 +47,5 @@
         <h3 class="curser-pointer" (click)="closeMenu()">Back</h3> }
     </div>
 </div>
+
 }

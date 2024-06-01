@@ -11,6 +11,7 @@ button {
     cursor: pointer;
     box-shadow: 0 0 5px var(--hover-color);
     @include center-flex;
+    font-family: 'Times New Roman', sans-serif;
 }
 
 button:hover {

@@ -47,7 +47,6 @@
         width: 100%;
         height: auto;
         z-index: 0;
-        // bottom: -45vw;
     }
     
     .hero-second-text {
@@ -58,6 +57,7 @@
     .hero-name {
         font-weight: 700;
         font-size: 60px;
+        transform: rotate(360deg);
     }
     
     .hero-text {
@@ -149,7 +149,7 @@
             width: auto;
         }
         .background-img {
-            bottom: -34vw;
+            bottom: -46vw;
         }
         .hero-text {
             height: 366px;
@@ -171,7 +171,7 @@
         }
         .img-hero {
             height: auto;
-            width: 52vh;
+            width: 57vh;
         }
         .background-img {
             position: absolute;
@@ -208,6 +208,9 @@
             position: relative;
             height: 39vh;
             width: 56vw;
+            img {
+                width: 73vw;
+            }
         }
         .img-hero {
             width: 63vw;

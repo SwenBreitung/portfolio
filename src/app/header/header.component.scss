@@ -1,6 +1,6 @@
 @import './../../styles.scss';
 section {
-    @include center-flex( $justify-content: space-between);
+    @include center-flex( $justify-content: center);
     background-color: rgba(20, 29, 47, 1) !important;
     height: 80px;
     padding: 8px 0 8px 0;
@@ -8,9 +8,18 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.inline-container {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1150px;
 }
 
 img {

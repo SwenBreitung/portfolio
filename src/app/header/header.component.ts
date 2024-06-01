@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from './../service/translate.service';
 import { LayoutService } from '../service/layout.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -13,6 +14,7 @@ export class HeaderComponent {
 constructor(
   public translateService:TranslateService,
   public layoutService:LayoutService,
+  private router: Router,
 ){}
 
 
@@ -29,6 +31,8 @@ switchTranslateToGerman(){
 closeMenu(){
   this.isMenuOpen = !this.isMenuOpen;
 }
-
+returnToMainSide(){
+  this.router.navigate(['/main']);
+}
 
 }

@@ -35,7 +35,6 @@ section {
 
 .profile-background-img {
     @include center-flex();
-    border: green solid 1px;
     border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,17 +52,13 @@ section {
     @include center-flex();
 }
 
-.background-style-img {
-    background-image: url(./../../../assets/brackground-img/purple_shadow.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.background-img {
     position: absolute;
-    top: 23px;
-    right: 0px;
-    bottom: 278px;
-    height: 267px;
-    width: 122.59px;
+    bottom: 0;
+    right: -252px;
+    background-size: cover;
+    width: 179px;
+    right: 0;
 }
 
 .section-heading {
